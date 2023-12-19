@@ -134,3 +134,56 @@ body {
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
   }
+  .proj-icon{
+    height: 450px;
+    width: 700px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .top-cloud,
+    .bottom-cloud {
+      display: none;
+    }
+  
+    .middle-container {
+      padding: 20px;
+    }
+  
+    .profile img {
+      width: 100px;
+    }
+  
+    .skill-row,
+    .proj-row {
+      text-align: left;
+    }
+    .proj-icon img{
+      width: 300px;
+    }
+  }
+  
+  /* Media query for even smaller screens */
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 2em;
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
+  
+    .middle-container {
+      padding: 10px;
+    }
+    .proj-icon img{
+      width: 300px;
+    }
+    .skill-row,
+    .proj-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
